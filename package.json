@@ -1,37 +1,4 @@
 {
-  "_args": [
-    [
-      "fis-parser-lsh-less",
-      "/Users/wangmingfei"
-    ]
-  ],
-  "_from": "fis-parser-lsh-less@latest",
-  "_id": "fis-parser-lsh-less@1.0.0",
-  "_inCache": true,
-  "_installable": true,
-  "_location": "/fis-parser-lsh-less",
-  "_nodeVersion": "0.12.5",
-  "_npmUser": {
-    "email": "lyx551006@gmail.com",
-    "name": "ladybug"
-  },
-  "_npmVersion": "3.5.0",
-  "_phantomChildren": {},
-  "_requested": {
-    "name": "fis-parser-lsh-less",
-    "raw": "fis-parser-lsh-less",
-    "rawSpec": "",
-    "scope": null,
-    "spec": "latest",
-    "type": "tag"
-  },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_shasum": "08e5c2be79d8826ab12ed4df1b989dc8869918f4",
-  "_shrinkwrap": null,
-  "_spec": "fis-parser-lsh-less",
-  "_where": "/Users/wangmingfei",
   "author": {
     "name": "lsh"
   },
@@ -56,6 +23,10 @@
       "email": "lyx551006@gmail.com"
     }
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yexingxia/fis-parser-lsh-less.git"
+  },
   "name": "fis-parser-lsh-less",
   "optionalDependencies": {},
   "readme": "ERROR: No README data found!",

@@ -7,17 +7,17 @@
 var fs = require('fs');
 var root = fis.project.getProjectPath();
 var path = require('path');
-
 var currentModule = fis.config.get('namespace');
-var isCommonModule = currentModule != 'common';
-var commonModulePath = root;
-
-if ( isCommonModule ) {
-    commonModulePath = path.resolve( root, '../common' );
-}
 var lessLibImports = [];
+
 module.exports = function(content, file, conf){
     if (conf.filedir.length && !lessLibImports.length) {
+        conf.mod = conf.mod || 'common';
+        var isCommonModule = currentModule != conf.mod;
+        var commonModulePath = root;
+        if ( isCommonModule ) {
+            commonModulePath = path.resolve( root, '../' + conf.mod );
+        }
         console.log('lib set\n');
         conf.filedir.forEach(function( dir ){
             var lessLib = path.resolve( commonModulePath, dir );
